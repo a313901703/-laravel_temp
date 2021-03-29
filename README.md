@@ -1,7 +1,7 @@
 ## 
 整合了dingo等常用扩展，封装了service层用于编写业务代码
 
-## 开发规范
+## 开发说明
 
 * [配置](doc/config.md)
 * [控制器](doc/controller.md)
