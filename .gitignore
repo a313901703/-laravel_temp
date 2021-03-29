@@ -5,7 +5,7 @@
 /storage/*.key
 /storage/api-docs
 /vendor
-/doc
+/doc/_book
 /test-result
 .env
 .env.backup

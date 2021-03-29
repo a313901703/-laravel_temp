@@ -7,6 +7,17 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## 开发说明
+
+* [配置](doc/config.md)
+* [控制器](doc/controller.md)
+* [模型](doc/model.md)
+* [Service](doc/service.md)
+* [工具类](doc/library.md)
+* [文件](doc/file.md)
+* [phpUnit](doc/unitTest.md)
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
