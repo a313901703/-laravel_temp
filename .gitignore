@@ -1,0 +1,23 @@
+/node_modules
+/public/hot
+/public/storage
+/public/uploads
+/storage/*.key
+/storage/api-docs
+/vendor
+/doc
+/test-result
+.env
+.env.backup
+.env.testing
+.phpunit.result.cache
+.vscode
+.htaccess
+nginx.htaccess
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+
+#Ignore IDE files
+.idea/

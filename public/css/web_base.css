@@ -1,0 +1,210 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html{
+  font-size:100px;
+}
+
+@font-face {
+  font-family: "BarlowCondensed-SemiBold";
+  src: url(../font/BarlowCondensed-SemiBold.ttf);
+}
+@font-face {
+  font-family: "JuriZaech-FrontageCondensed-3D";
+  src: url(../font/JuriZaech-FrontageCondensed-3D.otf);
+}
+@font-face {
+  font-family: "MadrasRegular";
+  src: url(../font/MadrasRegular.otf);
+}
+@font-face {
+  font-family: "MadrasRegularItalic";
+  src: url(../font/MadrasRegularItalic.otf);
+}
+@media(max-width:640px){ 
+  html { font-size:85.33px; } 
+  .content{width: 100% ;} 
+  .page-register .control-label {
+    width: 28% !important;
+  }
+  .page-register .form-input {
+    width: 70% !important;
+  }
+}  
+@media(max-width:540px){ html { font-size:72px; } }     
+@media(max-width:480px){ html { font-size:64px; } }     
+@media(max-width:445px){ html { font-size:60px; } }
+@media(max-width:414px){ html { font-size:55.2px; } }   
+@media(max-width:375px){ html { font-size:50px; } }    
+@media(max-width:360px){ html { font-size:48px; } }    
+@media(max-width:320px){ html { font-size:42.67px; } }   
+body{
+  font-size:0.14rem;
+  font-family: "MadrasRegular";
+  background-color: rgb(245,241, 232);
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+.error{
+  font-size: 12px;
+  color: #a94442 ;
+}
+.has-error{
+  color: #a94442;
+}
+.content{
+  width:7.2rem;
+  margin:0 auto;
+  padding-bottom: 0.8rem;
+} 
+.page-header{
+  width: 100%;
+  padding:0.4rem 0;
+  padding-top: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.page-header img{
+  width:2.0rem
+}
+.page-title{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.40rem;
+}
+.page-title .title-text{
+  margin-right: 0.8rem;
+}
+.page-title .title-text p:first-child{
+  min-width: 1.6rem;
+  font-family: "JuriZaech-FrontageCondensed-3D";
+  font-size: 0.24rem;
+  padding-bottom: 0.20rem;
+  border-bottom: 1px solid  rgb(207, 171, 130);
+}
+.page-title .title-text p:nth-child(2){
+  min-width: 1.8rem;
+  font-family: "BarlowCondensed-SemiBold";
+  padding-top: 0.20rem;
+}
+
+.page-description{
+  width: 100%;
+  padding:0.8rem 0.6rem;
+}
+.page-description p{
+  text-align: center;
+}
+.page-description .fa{
+  color: rgb(207, 171, 130);
+}
+.page-register{
+  width: 100%;
+  padding:0.4rem;
+  background-color: rgb(207, 171, 130);
+}
+.page-register .form-title{
+  font-size: 0.24rem;
+  font-family: "BarlowCondensed-SemiBold";
+  color: rgb(245,241, 232);;
+  margin-bottom: 0.4rem;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  text-align: center;
+}
+.page-register input{
+  width: 100%;
+  padding: 0.05rem;
+}
+.page-register .form-item{
+  width: 100%;
+  padding: 0.10rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-register .control-label {
+  width: 25%;
+  display: inline-block;
+  text-align: left;
+}
+.page-register .form-input {
+  display: inline-block;
+  width: 75%;
+}
+.page-register .alert{
+  padding: 0.12rem;
+  margin-bottom: 0.20rem;
+  border-radius: 4px;
+}
+.page-register .alert-danger{
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+.page-register .alert-success{
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.page-register .btn{
+  padding:0.06rem 0.12rem;
+  font-family: "BarlowCondensed-SemiBold" ;
+}
+.page-register .form-submit{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 0.4rem;
+}
+.page-footer{
+  width: 100%;
+}
+.page-footer .social{
+  font-size: 0.12rem;
+  padding: 0.4rem 0;
+}
+.social .expire{
+  font-size:0.16rem;
+  text-align: center;
+  font-family: "BarlowCondensed-SemiBold" ;
+  color:rgb(213,168,123)
+}
+.page-footer .social-link,.social-title,.social-bottom{
+  text-align: center;
+  font-family: "BarlowCondensed-SemiBold" ;
+}
+.page-footer .social-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-footer .social-link a{
+  width:0.50rem;
+  padding:0 0.06rem;
+  margin:0.2rem 0;
+}
+.page-footer .download{
+  font-family: "BarlowCondensed-SemiBold" ;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 0.4rem;
+}
+.page-footer .download .rc-logo{
+  width:1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
