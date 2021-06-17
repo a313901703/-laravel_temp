@@ -39,6 +39,19 @@ class BaseSearch
 
     public function getModels()
     {
+        $this->buildQuery();
+        return $this->query->paginate($this->getPageSize());
+    }
+
+
+    public function getAllModels()
+    {
+        $this->buildQuery();
+        return $this->query->get();
+    }
+
+    private function buildQuery()
+    {
         if (!$this->query) {
             throw new \Exception("invalid query");
         }
@@ -48,30 +61,6 @@ class BaseSearch
         }
         if (is_array($this->withCount) && count($this->withCount))
             $this->query->withCount($this->withCount);
-        return $this->query->paginate($this->getPageSize());
-    }
-
-
-    public function getAllModels()
-    {
-        if (!$this->query) {
-            throw new \Exception("invalid query");
-        }
-        if ($this->with) {
-            $with = is_array($this->with) ? $this->with : explode(",", $this->with);
-            $this->query->with($with);
-        }
-        if (is_array($this->withCount) && count($this->withCount))
-            $this->query->with($this->withCount);
-        return $this->query->get();
-    }
-
-    public function get()
-    {
-        if (!$this->query) {
-            throw new \Exception("invalid query");
-        }
-        return $this->query->get();
     }
 
     public function getPageSize()
